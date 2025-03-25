@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Threading;
 using dotIRC;
@@ -771,6 +772,11 @@ public class Twitch_ChatSource : ChatSource
 
     public override void UpdateViewerCount()
     {
+        Task.Run(UpdateViewerCountAsync);
+    }
+
+    private async Task UpdateViewerCountAsync()
+    {
         if (_allowUpdateCount)
         {
             _allowUpdateCount = false;
@@ -779,7 +785,7 @@ public class Twitch_ChatSource : ChatSource
             {
                 Header = $"{_streamerNick}:..";
 
-                var data = WoWnikTwitchClient.GetInfoAsync(_streamerNick).Result;
+                var data = await WoWnikTwitchClient.GetInfoAsync(_streamerNick).ConfigureAwait(false);
 
                 _streamerID = $"{data.users.data[0].id}";
                 try
