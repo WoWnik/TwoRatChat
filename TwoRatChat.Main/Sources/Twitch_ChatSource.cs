@@ -783,8 +783,6 @@ public class Twitch_ChatSource : ChatSource
             App.Log(' ', "Twitch Find ID: {0}", _streamerNick);
             try
             {
-                Header = $"{_streamerNick}:..";
-
                 var data = await WoWnikTwitchClient.GetInfoAsync(_streamerNick).ConfigureAwait(false);
 
                 _streamerID = $"{data.users.data[0].id}";
