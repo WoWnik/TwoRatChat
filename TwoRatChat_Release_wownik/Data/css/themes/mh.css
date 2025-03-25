@@ -1,0 +1,74 @@
+.noty_theme__sunset.noty_bar {
+  margin: 4px 0;
+  overflow: hidden;
+  background-color: red;
+  border-radius: 2px;
+  position: relative; }
+
+.noty_theme__sunset.noty_bar .noty_body {
+    padding: 0px;
+    font-size: 14px;
+    border: 30px solid transparent;
+    /*background-color: #FFD166;*/
+    border-image: url(/tworat/MonsterHunter/bg.png) 30 stretch;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
+
+.noty_theme__sunset.noty_bar .noty_buttons {
+    padding: 10px; }
+
+.noty_theme__sunset.noty_type__alert,
+.noty_theme__sunset.noty_type__notification {
+  background-color: #118AB2;
+  color: #fff; }
+
+  .noty_theme__sunset.noty_type__alert .noty_progressbar,
+  .noty_theme__sunset.noty_type__notification .noty_progressbar {
+    background-color: #fff;
+    opacity: .7; }
+
+.noty_theme__sunset.noty_type__warning {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff; }
+
+.noty_theme__sunset.noty_type__error {
+  background-color: #EF476F;
+  color: #fff; }
+  .noty_theme__sunset.noty_type__error .noty_progressbar {
+    opacity: .9; }
+
+.noty_theme__sunset.noty_type__info,
+.noty_theme__sunset.noty_type__information {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+  .noty_theme__sunset.noty_type__info .noty_progressbar,
+  .noty_theme__sunset.noty_type__information .noty_progressbar {
+    opacity: .8; }
+
+.noty_theme__sunset.noty_type__success {
+  background-color: #06D6A0;
+  color: #fff; }
+
+.message{
+	margin: -15px;
+	display: inline-block;
+}
+
+.messagetm{
+	margin: -15px;
+	display: inline-block;
+}
+
+.messagesys{
+	margin: -15px;
+	display: inline-block;
+}
+
+.namecontainer{
+	display: block;
+	font-weight: bold;
+	color: #adf;
+}
+
+.text{
+	text-align: justify;
+}

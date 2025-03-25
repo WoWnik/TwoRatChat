@@ -1,0 +1,99 @@
+ @font-face {
+	font-family: 'Anonymous Pro'; /* Имя шрифта */
+	src: url(asset://rat/fonts/Anonymous_Pro.ttf); /* Путь к файлу со шрифтом */
+	src: url(/fonts/Anonymous_Pro.ttf);
+}
+
+@font-face {
+	font-family: 'Anonymous Pro'; /* Имя шрифта */
+	src: url(asset://rat/fonts/Anonymous_Pro_B.ttf); /* Путь к файлу со шрифтом */
+	src: url(/fonts/Anonymous_Pro_B.ttf);
+    font-weight: bold;
+}
+
+/*Контейнер чата*/
+.container{
+	overflow: hidden;
+	position: fixed;
+}
+
+/*Подстветка имени*/
+.message_name{
+    display: inline-block;
+    position: relative;
+    color: blue;
+    margin-right: 5px;
+}
+
+.message_source{
+	margin-right: 2px;
+}
+
+/*Подсветка системного*/
+.message_textsys{
+    display: inline-block;
+    position: relative;
+    color: #aaffaa;
+    /*margin: -5px 5px 5px 5px;*/
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/*Текст*/
+.message_text{
+    position: relative;
+    color: black;
+}
+
+/*Опыт*/
+.message_exp{
+	color: #77ffff;
+	margin-right: 3px;
+}
+
+/*Уровень*/
+.message_level{
+	width: 16px;
+	height: 16px;
+	margin-left: 2px;
+}
+
+/*Текст для стримера*/
+.message_texttm{
+	color: orange;
+}
+
+/*Ссылка*/
+.message_link{
+	color: green;
+}
+
+/*Сообщение*/
+/*Сообщение для стримера*/
+/*Сообщение системное*/
+.messagetm, .message, .messagesys {
+    overflow: hidden;
+	position: relative;
+	width: 98%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	
+	/*text-shadow: 0 1px 1px white;*/
+	margin-top: 1px;
+	padding: 4px;
+	z-index: -2;
+	font-family: 'Anonymous Pro';
+
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgb(210,244,254)),
+		color-stop(1, rgb(149,194,253))
+	);
+	border: solid 1px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	
+}

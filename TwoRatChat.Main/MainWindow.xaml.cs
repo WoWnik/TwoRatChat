@@ -335,8 +335,8 @@ namespace TwoRatChat.Main {
         }
 
         private void PollEditor_Click(object sender, RoutedEventArgs e) {
-            PollingEditorForm ped = new PollingEditorForm();
-            ped.Show( _chat.Polling );
+            // PollingEditorForm ped = new PollingEditorForm();
+            // ped.Show( _chat.Polling );
         }
 
         private void Options_Click(object sender, RoutedEventArgs e) {
